@@ -1,8 +1,17 @@
 class ArticlesController < ApplicationController
+
   def index
-    @articles = Article.all
+    p params
   end
 
   def edit
   end
+
+  def content    
+    @content = Article.all
+    
+    render json: {data: @content}
+  end
+
+
 end
