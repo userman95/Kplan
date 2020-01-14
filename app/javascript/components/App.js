@@ -3,6 +3,9 @@ import {Route, Switch} from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Content from './Content';
+import '../styles/style.scss';
+import Navbar from './Navbar';
+
 
 class App extends React.Component{
     constructor(props){
@@ -11,6 +14,7 @@ class App extends React.Component{
     render(){
         return(
             <div>
+                <Navbar />
                 <Switch>
                     <Route exact path="/home" component={Home} />
                     <Route exact path="/about" component={About} />
