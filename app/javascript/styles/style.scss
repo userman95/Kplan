@@ -1,18 +1,22 @@
-@import '~bootstrap/dist/css/bootstrap';
+@import "~bootstrap/dist/css/bootstrap";
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
-.kplan-logo{
-    background: linear-gradient(to top,#c5c5c5, #838383,#c5c5c5, );
-    background-size: auto 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: logoAnimation 2s ease-in-out infinite;
+.kplan-logo {
+  background: linear-gradient(to top, #c5c5c5, #838383, #c5c5c5);
+  background-size: auto 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logoAnimation 2s ease-in-out infinite;
 }
 @keyframes logoAnimation {
-    to {
-        background-position: center 200%;
-      }
+  to {
+    background-position: center 200%;
   }
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}

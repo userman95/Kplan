@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root to: redirect('/home')
   get 'articles', to: 'articles#content'
+  # get '/articles/:id', to: 'articles#show'
   # to kalutero route logo asfaleias tha itan: get 'home', to: 'articles#index' 
   # kai articles#index giati theloume na ginei render to index action pou periexei to javascript_pack
   match '*path', to: 'articles#index', via: :all

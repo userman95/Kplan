@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
+import { useParams } from "react-router-dom";
 
-class About extends React.Component{
-    render(){
-        return(
-            <div>About</div>
-        );
-    }
+function About() {
+  const { id } = useParams();
+
+  return <div>About {id}</div>;
 }
 
 export default About;
