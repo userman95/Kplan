@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 
 export default function ImgMediaCard({ id, title, body }) {
   const classes = useStyles();
-
+  console.log(id, title, body);
   return (
     <Card className={classes.root}>
       <CardActionArea>

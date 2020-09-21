@@ -14,7 +14,7 @@ class Content extends React.Component {
   }
 
   componentDidMount() {
-    axios.get("/articles.json").then((data) => {
+    axios.get("/articles").then((data) => {
       let sumData = [];
       data.data.data.map((data) => {
         sumData.push(data);

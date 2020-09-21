@@ -10,7 +10,6 @@ import { StylesProvider } from "@material-ui/core/styles";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
   }
   render() {
     return (
@@ -20,11 +19,10 @@ class App extends React.Component {
           <Route exact path="/home" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/content" component={Content} />
-          {/* <Route exact path="/article/:id" component={About} /> */}
+          <Route exact path="/article/:id" component={About} />
         </Switch>
       </StylesProvider>
     );
   }
 }
-
 export default App;

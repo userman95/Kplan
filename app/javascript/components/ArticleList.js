@@ -57,7 +57,7 @@ export default function ArticleList(props) {
   return (
     <Grid item container direction="row" wrap="wrap" spacing={2}>
       {props.articles.map((article) => (
-        <Grid item xs={breakpoint}>
+        <Grid item xs={breakpoint} key={"cardgrid" + article.id}>
           <Card
             key={article.id}
             id={article.id}

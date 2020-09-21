@@ -1,22 +1,18 @@
 class ArticlesController < ApplicationController
-
   def index
     p params
-
   end
 
-  def edit
-  end
+  def edit; end
 
-  def content    
+  def content
     @data = Article.all
     p params
-    render json: {data: @data}
+    render json: { data: @data }
   end
 
   def show
-    @article = Article.find(params[:id])   
-    render json: {data: @article}
+    @article = Article.where(id: params[:id])
+    render json: { data: @article }
   end
-
 end
