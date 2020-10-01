@@ -24,7 +24,6 @@ const useStyles = makeStyles({
 
 export default function ImgMediaCard({ id, title, body }) {
   const classes = useStyles();
-  console.log(id, title, body);
   return (
     <Card className={classes.root}>
       <CardActionArea>
