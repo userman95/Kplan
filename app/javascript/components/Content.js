@@ -4,6 +4,7 @@ import Container from "@material-ui/core/Container";
 import { Typography } from "@material-ui/core";
 import axios from "axios";
 import ArticleList from "./ArticleList";
+import DefaultLayout from "./DefaultLayout";
 
 class Content extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class Content extends React.Component {
 
   render() {
     return (
-      <Container maxWidth="xl">
+      <DefaultLayout>
         <Grid container wrap={"wrap"}>
           <Grid item xs={12}>
             <Typography variant="h2" align="center">
@@ -37,7 +38,7 @@ class Content extends React.Component {
           </Grid>
           <ArticleList articles={this.state.articles} />
         </Grid>
-      </Container>
+      </DefaultLayout>
     );
   }
 }

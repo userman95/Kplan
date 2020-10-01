@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Drawer from "@material-ui/core/Drawer";
-
+import DefaultLayout from "./DefaultLayout";
 export const NavBarWrapper = styled.div`
   display: flex;
   background-color: #343a40;
@@ -36,3 +36,9 @@ export const SideMenu = withStyles({
     top: "56px",
   },
 })(Drawer);
+
+export const Layout = styled.div`
+  margin-left: 172px;
+  padding: 56px 38px;
+  overflow: hidden;
+`;

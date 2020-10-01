@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import Grid from "@material-ui/core/Grid";
-
 // Hook
 function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
