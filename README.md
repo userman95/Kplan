@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Requirements: 
+  * Rails Version >= 5.2.4 (Command: rails -v)
+  * Ruby Version >= 2.6 (Command: ruby -v)
+  * Postgresql 10.8 (Command: psql -V)
 
-Things you may want to cover:
+# Install
+After installing ruby, RubyGems are also installed. This means than you can use 'gem' package manager and also a bundler.
+To Install the packages run 'bundle install'. If an update is required , please do so.
+Then go to the root folder of the app and run `npm install` or `yarn install` to install all packages that are configured in `package.json`.
 
-* Ruby version
+# How to run
+Change directory to the app's directory and then:
 
-* System dependencies
+Run the server: `rails s`
 
-* Configuration
+Run webpack dev server to compile the React code. `./bin/webpack-dev-server`
 
-* Database creation
+and you are all set! 
 
-* Database initialization
+# Important folders: 
+* Routes that are described from rails: `config/routes.rb`
+* Controllers decide what to do when the request reaches the demanded route and are located in: `app/controllers`.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
