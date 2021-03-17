@@ -7,7 +7,7 @@
 
 # Install
 After installing ruby, RubyGems are also installed. This means than you can use 'gem' package manager and also a bundler.
-To Install the packages run `bundle install`. If an update is required , please do so.
+To Install the packages described in `./Gemfile` run `bundle install`. If an update is required , please do so.
 Then go to the root folder of the app and run `npm install` or `yarn install` to install all packages that are configured in `package.json`.
 
 # How to run
