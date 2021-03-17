@@ -13,6 +13,8 @@ Then go to the root folder of the app and run `npm install` or `yarn install` to
 # How to run
 Change directory to the app's directory and then:
 
+Run postgresql service `sudo service postgresql start`
+
 Run the server: `rails s`
 
 Run webpack dev server to compile the React code. `./bin/webpack-dev-server`
